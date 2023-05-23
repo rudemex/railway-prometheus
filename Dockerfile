@@ -1,5 +1,7 @@
 # The official Elasticsearch Docker image
+
 FROM prom/prometheus
+ADD config/prometheus.yml /etc/prometheus/
 
 # Copy our config file over
 #COPY --chown=1000:0 config/prometheus.yml /usr/share/prometheus/config/prometheus.yml

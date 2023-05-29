@@ -9,4 +9,4 @@ scrape_configs:
     scrape_interval: 5s
     metrics_path: /v1/metrics
     static_configs:
-      - targets: ['localhost:8080']
+      - targets: ['localhost:8080', 'https://nestjs-starter.up.railway.app']
